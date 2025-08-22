@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "host start",
+      "type": "shell",
+      "command": "func host start --dotnet-isolated-debug",
+       "options": {
+        "cwd": "${workspaceFolder}/src"
+      },
+      "isBackground": true,
+      "problemMatcher": "$func-watch",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
+    }
+  ]
+}   
